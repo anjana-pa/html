@@ -1,0 +1,25 @@
+<html>
+<body bgcolor="skyblue">
+<h1>prime or Not</h1>
+<script>
+function prime(n)
+{
+var n=prompt("Enter the number:");
+var i,rem=1
+for(i=2; i<=n -1; i++)
+if(n % i ==0){
+rem = 0;
+break;
+}
+if(rem==1)
+alert(n +" is prime number");
+else
+alert(n +" is not a prime number");
+}
+</script>
+</form>
+<input type="button" value="Click Here" onclick="prime()"/>
+</form>
+</body>
+</html>
+

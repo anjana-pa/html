@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="powderblue">
+<font color="blue"><h3 align="center"><i>PRIME NUMBER WITHIN RANGE</i></h3></font>
+<script>
+document.write("Prime number with in range")
+ 
+function prime()
+{
+ 
+var a=prompt("Enter the lower range limit");
+var b=prompt("Enter the higher range limit");
+document.write("Prime number with in range "+a+" and "+b+" are")
+for(i=a;i<b;i++)
+{
+var ptr=true;
+for(j=2;j<i;j++)
+{
+if(i%j==0)
+{
+ptr=false;
+break;
+}
+}
+if(i>1 && ptr==true)
+{
+document.write("<br>"+i+"<br>");
+ 
+}
+}
+}
+</script>
+<form>
+<input type="button" value="click" onclick="prime()">
+</form></body>
+</html>
